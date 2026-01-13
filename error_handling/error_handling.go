@@ -6,6 +6,7 @@ import (
 )
 
 func divide(a, b int) (int, error) {
+	// Check for division by zero
 	if b == 0 {
 		return 0, errors.New("Cannot Divide by Zero")
 	}
